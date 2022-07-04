@@ -21,6 +21,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
@@ -28,6 +29,8 @@
 .logo {
   width: 228px;
   height: 32px;
+  position: absolute;
+  z-index: 3;
 }
 
 /* устанавливаем позицию лого относительно блока */
@@ -38,13 +41,15 @@
 
 /* задаем ширину и центрируем заголовок */
 .header__title {
-  width: 730px;
+  max-width: 730px;
   margin: auto 0;
+  position: relative;
+  z-index: 3;
 }
 
 /* задаем позицию для заголовка */
 .title_place_header {
-  left: 64px;
+  margin-left: 64px;
 }
 
 /* задаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) заголовка */
@@ -54,13 +59,17 @@
   font-weight: bold;
 }
 
-/* не используется */
+/* убираем подчеркивание у ссылки */
 .header__link {
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 /* задаем ширину подзаголовка */
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
+  position: absolute;
+  z-index: 3;
 }
 
 /* задаем позицию для подзаголовка */
@@ -80,11 +89,9 @@
 .header__main-illustration {
   width: 765px;
   height: 608px;
-}
-
-/* устанавливаем размер изображения  */
-.header__main-illustration_image_cover {
-  background-size: cover;
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
 }
 
 /* устанавливаем позицию изображения */
@@ -98,6 +105,8 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  z-index: 1;
 }
 
 /* устанавливаем позицию для изображения */
@@ -106,20 +115,16 @@
   right: 0;
 }
 
+.description {
+  display: flex;
+  justify-content: center;
+}
+
 /* устанавливаем размеры для блока*/
 .two-columns {
   display: flex;
   width: 80%;
-  min-height: 340px;
-}
-
-/* устанавливаем отступы блока */
-.two-columns_margin {
-  margin: 100px auto 0 auto;
-}
-
-/* устанавливаем распределение элементов */
-.two-columns_space_between {
+  margin-top: 100px;
   justify-content: space-between;
 }
 
@@ -129,10 +134,11 @@
 }
 
 /* задаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) брифа */
-.two-columns__brief_link {
+.two-columns__brief_text_font {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  color: #2f80ed;
 }
 
 /* устанавливаем размеры для блока с текстом */
@@ -146,11 +152,12 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 30px 0;
 }
 
-/* устанавливаем отступы */
-.two-columns__main-text_place {
-  margin: 30px 0;
+/* убираем отступ у верзнего параграфа */
+.two-columns__paragraph:first-child {
+  margin: 0;
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) части текста */
@@ -177,28 +184,24 @@
 /* устанавливаем размер блока */
 .section-title {
   width: 60%;
+  margin: 100px 0 0 0;
+  z-index: 2;
 }
 
-/* устанавливаем отступы */
-.section-title_margin {
-  margin: 100px 0 20px 0;
-}
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) заголовка */
 .section-title_text_font {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
 }
 
 /* устанавливаем размер блока */
 .section-subtitle {
   width: 60%;
-}
-
-/* устанавливаем отступы */
-.section-subtitle_margin {
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
+  z-index: 2;
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) подзаголовка */
@@ -206,33 +209,27 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  text-align: center;
 }
 
 /* устанавливаем размеры блока и расположение элементов блока */
 .table {
   display: flex;
   width: 1100px;
+  margin-bottom: 100px;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-/* устанавливаем отступы */
-.table_margin {
-  margin-bottom: 100px;
+  z-index: 2;
 }
 
 /* устанавливаем размеры ячеек */
-.table__cell_l {
+.table__cell {
   width: 250px;
-}
-
-/* устанавливаем верхний отступ ячейки */
-.table__cell_margin_t {
   margin-top: 60px;
 }
 
 /* устанавливаем нижний отступ заголовка ячейки */
-.table__heading_margin {
+.table__heading {
   margin: 0 0 20px 0;
 }
 
@@ -244,10 +241,11 @@
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) текста ячейки */
-.table__text_text_font {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 /* устанавливаем нижний отступ текста ячейки */
@@ -261,16 +259,19 @@
   height: 890px;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.feynman__image {
+  background-size: 867px, 637px;
+  background: url(../images/feynman.png) no-repeat left bottom;
 }
 
 /* устанавливаем размер блока */
 .feynman__title {
   width: 648px;
-}
-
-/* устанавливаем верхний отступ */
-.feyman__title_margin {
   margin: 100px 0 0 0;
+  z-index: 2;
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) заголовка */
@@ -278,11 +279,13 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
+  text-align: center;
 }
 
 /* устанавливаем верхний отступ */
-.feynman__subtitle_margin {
+.feynman__subtitle {
   margin: 70px 0 0 0;
+  z-index: 2;
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) подзаголовка */
@@ -290,12 +293,15 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-align: center;
 }
 
 /* устанавливаем расположение ссылки */
-.feynman__link_place {
+.feynman__link {
   top: 50%;
   right: 48px;
+  position: absolute;
+  z-index: 2;
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) ссылки */
@@ -303,18 +309,9 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-}
-
-/* устанавливаем размеры блока с изображением */
-.feynman__image {
-  width: 867px;
-  height: 637px;
-}
-
-/* устанавливаем позицию блока с изображением */
-.feynman__image_place {
-  bottom: 0;
-  left: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #2f80ed;
 }
 
 /* настраиваем блок */
@@ -323,63 +320,55 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-}
-
-/* устанавливаем верхний отступ */
-.section-title_margin_t {
-  margin-top: 90px;
+  position: relative;
 }
 
 /* устанавливаем цвет, межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) заголовка */
 .section-title_theme_dark {
+  margin-top: 90px;
   color: white;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  text-align: center;
 }
 
-/* устанавливаем верхний отступ */
-.section-subtitle_margin_t {
-  margin-top: 20px;
-}
-
-.section-subtitle__h {
-  margin: 0;
-}
-
+/* устанавливаем тумную тему */
 .section-subtitle_theme_dark {
   color: white;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  text-align: center;
 }
 
+/* устанавливаем нижний отступ */
 .table_margin_kaufman {
   margin-bottom: 90px;
 }
 
-.table__cell_s {
-  width: 200px;
-}
-
-.table__cell_margin_tr {
-  margin-top: 80px;
-  margin-right: 0;
-}
-
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
+  margin-top: 80px;
+  margin-right: 0;
+  width: 200px;
   color: white;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
 
-
 /* устанавливаем размеры блока */
 .kaufman__triangle {
   width: 877px;
   height: 877px;
+  position: absolute;
+  z-index: 1;
+}
+
+.kaufman__triangle_image {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 
 /* устанавливаем расположение изображения */
@@ -398,18 +387,22 @@
 .footer__columns {
   display: flex;
   width: 90%;
+  margin: 60px auto 40px auto;
   justify-content: space-between;
 }
 
-/* устанавливаем отступы */
-.footer__column_margin {
-  margin: 60px auto 40px auto;
+/* загружаем лого */
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
 }
 
 /* настраиваем блок copyright */
 .footer__column_content_copyright {
-  display: flex;
-  flex-direction: column;
   flex-basis: 711px;
   justify-content: space-between;
 }
@@ -421,20 +414,14 @@
   font-weight: normal;
 }
 
-/* устанавливаем отступы */
-.footer__author_margin {
-  margin: 16px 0;
-}
-
 /* устанавливаем темную тему */
 .footer__author_theme_dark {
   color: white;
+  margin: 18px 0;
 }
 
 /* настраиваем блок */
 .footer__column_content_info {
-  display: flex;
-  flex-direction: column;
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) загловка */
@@ -444,13 +431,9 @@
   font-weight: 600;
 }
 
-/* устанавливаем отступы */
-.footer__column-heading_margin {
-  margin: 0 0 20px 0;
-}
-
 /* устанавливаем темную тему */
 .footer__column-heading_theme_dark {
+  margin: 0 0 20px 0;
   color: white;
 }
 
@@ -458,10 +441,6 @@
 .footer__column-links {
   display: flex;
   flex-direction: column;
-}
-
-/* устанавливаем нижний отступ */
-.footer__column-links_margin_b {
   margin-bottom: 16px;
 }
 
@@ -470,11 +449,6 @@
   color: white;
 }
 
-/* настраиваем блок с соц сетями */
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-}
 
 /* выравниваем элементы */
 .footer__column-link {
@@ -487,6 +461,7 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  text-decoration: none;
 }
 
 /* устанавливаем размеры иконок */
@@ -495,33 +470,13 @@
   height: 16px;
 }
 
-/* устанавливаем левый отступ */
-.footer__social-text_margin_l {
-  margin-left: 10px;
-}
-
 /* задаем темную тему */
 .footer__social-text_theme_dark {
   color: white;
+  margin-left: 10px;
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/* Блок с универсальными классами */
-
-/* устанавливает позицию в relative  */
-.position_r {
-  position: relative;
-}
-
-/* устанавливает позицию в absolute  */
-.position_a {
-  position: absolute;
-}
-
-/* назначает синий цвет ссылок */
-.link_color_blue {
-  color: #2f80ed;
-}
 
 /* назначает серый цвет фона */
 .bg_color_gray {
@@ -541,23 +496,4 @@
 /* назначает черный цвет фона */
 .bg_color_black {
   background-color: #000000;
-}
-
-/* назначает положение элемента равный 1 */
-.z-index_1 {
-  z-index: 1;
-}
-
-/* назначает положение элемента равный 2 */
-.z-index_2 {
-  z-index: 2;
-}
-
-/* назначает положение элемента равный 3 */
-.z-index_3 {
-  z-index: 3;
-}
-
-.text_align {
-  text-align: center;
 }
