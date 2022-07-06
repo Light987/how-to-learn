@@ -29,12 +29,12 @@
 .logo {
   width: 228px;
   height: 32px;
-  position: absolute;
   z-index: 3;
 }
 
 /* устанавливаем позицию лого относительно блока */
 .logo_place_header {
+  position: absolute;
   top: 30px;
   left: 64px;
 }
@@ -391,11 +391,6 @@
   justify-content: space-between;
 }
 
-/* загружаем лого */
-.logo_place_footer {
-  background-image: url(../images/logo_place_footer.svg);
-}
-
 .footer__column {
   display: flex;
   flex-direction: column;
@@ -418,10 +413,6 @@
 .footer__author_theme_dark {
   color: white;
   margin: 18px 0;
-}
-
-/* настраиваем блок */
-.footer__column_content_info {
 }
 
 /* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) загловка */
