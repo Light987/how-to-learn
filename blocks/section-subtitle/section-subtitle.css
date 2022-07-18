@@ -1,0 +1,6 @@
+/* устанавливаем размер блока */
+.section-subtitle {
+  width: 60%;
+  margin: 20px auto 0 auto;
+  z-index: 2;
+}

@@ -1,0 +1,5 @@
+/* задаем темную тему */
+.footer__social-text_theme_dark {
+  color: white;
+  margin-left: 10px;
+}

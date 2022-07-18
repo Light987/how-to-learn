@@ -1,0 +1,12 @@
+/* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) текста */
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+/* убираем отступ у верзнего параграфа */
+.two-columns__paragraph:first-child {
+  margin: 0;
+}

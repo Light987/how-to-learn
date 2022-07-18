@@ -1,0 +1,5 @@
+/* задаем параметры блока description */
+.description {
+  display: flex;
+  justify-content: center;
+}

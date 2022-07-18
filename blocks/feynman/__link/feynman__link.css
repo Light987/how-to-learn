@@ -1,0 +1,12 @@
+/* устанавливаем расположение ссылки */
+.feynman__link {
+  top: 50%;
+  right: 48px;
+  position: absolute;
+  z-index: 2;
+  transition: opacity .6s ease;
+}
+
+.feynman__link:hover {
+  opacity: .6;
+}

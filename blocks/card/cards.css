@@ -1,0 +1,8 @@
+/* устанавливаем размеры блока и расположение элементов блока */
+.cards {
+  display: flex;
+  width: 920px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  z-index: 2;
+}

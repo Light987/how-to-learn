@@ -1,0 +1,6 @@
+/* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) части текста */
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}

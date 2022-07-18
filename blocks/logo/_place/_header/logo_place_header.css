@@ -1,0 +1,6 @@
+/* устанавливаем позицию лого относительно блока */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}

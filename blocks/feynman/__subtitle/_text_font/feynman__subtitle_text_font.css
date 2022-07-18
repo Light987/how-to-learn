@@ -1,0 +1,7 @@
+/* устанавливаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) подзаголовка */
+.feynman__subtitle_text_font {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}

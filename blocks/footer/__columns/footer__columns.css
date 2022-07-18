@@ -1,0 +1,7 @@
+/* устанавливаем размеры блока и расположение элементов */
+.footer__columns {
+  display: flex;
+  width: 90%;
+  margin: 60px auto 40px auto;
+  justify-content: space-between;
+}

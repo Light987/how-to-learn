@@ -1,0 +1,5 @@
+/* настраиваем подвал */
+.footer {
+  display: flex;
+  min-height: 350px;
+}

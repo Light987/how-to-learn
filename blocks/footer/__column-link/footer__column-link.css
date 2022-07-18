@@ -1,0 +1,11 @@
+/* выравниваем элементы */
+.footer__column-link {
+  display: flex;
+  align-items: center;
+  transition: opacity .6s ease;
+}
+
+
+.footer__column-link:hover {
+  opacity: .6;
+}

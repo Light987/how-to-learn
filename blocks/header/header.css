@@ -1,0 +1,9 @@
+/* задаем минимальные и максимальные значения высоты шапки сайта */
+.header {
+  display: flex;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  overflow: hidden;
+}

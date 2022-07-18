@@ -1,0 +1,7 @@
+/* задаем ширину и центрируем заголовок */
+.header__title {
+  max-width: 730px;
+  margin: auto 0;
+  position: relative;
+  z-index: 3;
+}

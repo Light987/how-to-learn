@@ -1,0 +1,9 @@
+/* настраиваем блок */
+.feynman {
+  display: flex;
+  height: 890px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+}

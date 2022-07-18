@@ -1,0 +1,5 @@
+/* устанавливаем темную тему */
+.footer__column-heading_theme_dark {
+  margin: 0 0 20px 0;
+  color: white;
+}

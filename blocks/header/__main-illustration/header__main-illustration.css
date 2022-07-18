@@ -1,0 +1,8 @@
+/* устанавливаем размеры блока с иллюстрации */
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
+}

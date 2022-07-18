@@ -1,0 +1,5 @@
+/* устанавливаем темную тему */
+.footer__author_theme_dark {
+  color: white;
+  margin: 18px 0;
+}

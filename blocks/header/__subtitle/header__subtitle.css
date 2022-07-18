@@ -1,0 +1,6 @@
+/* задаем ширину подзаголовка */
+.header__subtitle {
+  max-width: 388px;
+  position: absolute;
+  z-index: 3;
+}
