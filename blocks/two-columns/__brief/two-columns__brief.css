@@ -1,4 +1,5 @@
 /* устанавливаем размеры блока */
 .two-columns__brief {
   width: 175px;
+  margin: 0;
 }

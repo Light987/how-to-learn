@@ -10,21 +10,11 @@
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-/* сбрасываем отступы */
-.margin_zero {
-  margin: 0;
-}
-
 /* убираем знаки листа (точки), обнуляем отступы */
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-/* назначает серый цвет фона */
-.bg_color_gray {
-  background-color: #f2f2f2;
 }
 
 /* назначает синий цвет фона */
