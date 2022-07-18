@@ -16,18 +16,3 @@
   padding: 0;
   margin: 0;
 }
-
-/* назначает синий цвет фона */
-.bg_color_blue {
-  background-color: #2f80ed;
-}
-
-/* назначает серый цвет фона */
-.bg_color_dark_gray {
-  background-color: #1f1f1f;
-}
-
-/* назначает черный цвет фона */
-.bg_color_black {
-  background-color: #000000;
-}
