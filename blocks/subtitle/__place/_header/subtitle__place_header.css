@@ -1,5 +1,5 @@
 /* задаем позицию для подзаголовка */
-.subtitle_place_header {
+.subtitle__place_header {
   left: 64px;
   bottom: 30px;
 }
