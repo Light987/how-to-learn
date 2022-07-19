@@ -1,6 +1,0 @@
-/* задаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) заголовка */
-.header__title_text_font {
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: bold;
-}

@@ -5,6 +5,12 @@
   position: absolute;
   z-index: 2;
   transition: opacity .6s ease;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #2f80ed;
 }
 
 .feynman__link:hover {

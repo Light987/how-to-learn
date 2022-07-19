@@ -1,4 +1,7 @@
 /* устанавливаем нижний отступ заголовка ячейки */
 .table__heading {
   margin: 0 0 20px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
 }

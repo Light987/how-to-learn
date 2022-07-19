@@ -6,7 +6,12 @@
   margin: 30px 0;
 }
 
-/* убираем отступ у верзнего параграфа */
+/* убираем отступ у верхнего параграфа */
 .two-columns__paragraph:first-child {
   margin: 0;
+}
+
+/* убираем отступ у нижнего параграфа */
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }

@@ -2,9 +2,12 @@
 .footer__column-link {
   display: flex;
   align-items: center;
-  margin: 0 0 0 10px;
   transition: opacity .6s ease;
   color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 
