@@ -11,7 +11,6 @@
 @import url(../blocks/header/__square-pic/header__square-pic.css);
 @import url(../blocks/header/__title/header__title.css);
 @import url(../blocks/header/__subtitle/header__subtitle.css);
-@import url(../blocks/header/__subtitle/_text_font/header__subtitle_text_font.css);
 
 /* анимация вращения */
 @import url(../blocks/rotation/rotation.css);
@@ -25,8 +24,7 @@
 
 /* импорт стилей для блока logo */
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/logo/_place/logo_place.css);
-@import url(../blocks/logo/_place/_header/logo_place_header.css);
+@import url(../blocks/logo/_place/logo_place_header.css);
 
 /* импорт стилей для блока section-title */
 @import url(../blocks/section-title/section-title.css);
@@ -42,7 +40,6 @@
 @import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../blocks/table/__text/table__text.css);
-@import url(../blocks/table/__text/_margin/table__text_margin.css);
 @import url(../blocks/table/_margin/table_margin_kaufman.css);
 
 /* импорт стилей для блока two-columns */
@@ -101,7 +98,7 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__column/footer__column.css);
-@import url(../blocks/footer/__column/_content_copyright/footer__column_content_copyright.css);
+@import url(../blocks/footer/__column/_content/footer__column_content_copyright.css);
 @import url(../blocks/footer/__column-heading/footer__column-heading.css);
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);

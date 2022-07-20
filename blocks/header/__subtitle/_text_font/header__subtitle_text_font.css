@@ -1,6 +1,0 @@
-/* задаем межстрочный отступ, размер шрифта и вес (жирный, полужирный и т.д.) подзаголовка */
-.header__subtitle_text_font {
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-}
